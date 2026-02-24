@@ -1,0 +1,22 @@
+body {
+    background-color: #f0f8ff;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+h2 {
+    border-bottom: 3px solid #87CEFA;
+    padding-bottom: 8px;
+}
+
+.btn-primary {
+    background-color: #87CEFA;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #FFE87C;
+    color: black;
+}
