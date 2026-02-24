@@ -17,13 +17,7 @@ body{
 }
 
 h1{ font-weight:700; }
-
-section{
-  margin-top:40px;
-  max-width:800px;
-  margin-left:auto;
-  margin-right:auto;
-}
+section{ margin-top:40px; max-width:800px; margin-left:auto; margin-right:auto; }
 
 ul{
   list-style:none;
@@ -31,14 +25,10 @@ ul{
   text-align:left;
 }
 
-/* Project bars */
-.project-item{
-  background:white;
-  padding:15px;
-  border-left:6px solid #0077cc;
-  border-radius:8px;
+li{
   margin-bottom:20px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  padding-left:15px;
+  border-left:5px solid #0077cc;   /* ← البار الأزرق */
 }
 
 a{
@@ -51,7 +41,6 @@ a:hover{
   color:#FFD966;
 }
 
-/* Contact form */
 form{
   display:flex;
   flex-direction:column;
@@ -113,32 +102,32 @@ button:hover{
 <!-- Projects -->
 <section>
   <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Gym Management Website</strong><br>
+      Responsive website for managing memberships, class schedules, and trainer information using HTML, CSS, and Bootstrap.
+    </li>
 
-  <div class="project-item">
-    <strong>Gym Management Website</strong><br>
-    Responsive website for managing memberships, class schedules, and trainer information using HTML, CSS, and Bootstrap.
-  </div>
+    <li>
+      <strong>Task Management Web App</strong><br>
+      Simple to-do web application that allows users to add, edit, and organize daily tasks with a clean user interface.
+    </li>
 
-  <div class="project-item">
-    <strong>Task Management Web App</strong><br>
-    To-do web application allowing users to add, edit, and organize daily tasks with a clean interface.
-  </div>
+    <li>
+      <strong>Online Booking System UI</strong><br>
+      User interface design for an appointment booking system including calendar view and service selection pages.
+    </li>
 
-  <div class="project-item">
-    <strong>Online Booking System UI</strong><br>
-    User interface design for an appointment booking system with calendar and service selection pages.
-  </div>
+    <li>
+      <strong>Student Dashboard Interface</strong><br>
+      Dashboard layout displaying academic progress, announcements, and schedules with responsive design principles.
+    </li>
 
-  <div class="project-item">
-    <strong>Student Dashboard Interface</strong><br>
-    Dashboard layout displaying academic progress, announcements, and schedules.
-  </div>
-
-  <div class="project-item">
-    <strong>E-Commerce Front-End Page</strong><br>
-    Online store front-end including product listing, details page, and shopping cart layout.
-  </div>
-
+    <li>
+      <strong>E-Commerce Front-End Page</strong><br>
+      Front-end design for an online store including product listing, product details, and shopping cart layout.
+    </li>
+  </ul>
 </section>
 
 <!-- Contact (old version restored) -->
