@@ -56,3 +56,66 @@
     right: 10px;
   }
 }
+/* =========================================
+   FORCE SMALL TOP-RIGHT IMAGE
+   ========================================= */
+
+.hero{
+  position: relative !important;
+}
+
+/* Remove flex influence */
+.hero-inner{
+  display: block !important;
+  position: relative !important;
+}
+
+/* Move image to top-right */
+.profile-img{
+  position: absolute !important;
+  top: 25px !important;
+  right: 40px !important;
+
+  width: 110px !important;
+  height: 110px !important;
+
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  z-index: 10 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .profile-img{
+    width: 85px !important;
+    height: 85px !important;
+    top: 15px !important;
+    right: 20px !important;
+  }
+}
+
+
+/* =========================================
+   FORCE LIGHT YELLOW THEME ONLY
+   ========================================= */
+
+body{
+  background: #fffdf4 !important;
+}
+
+.hero{
+  background: #ffe08a !important;
+}
+
+.btn-primary{
+  background: #ffe08a !important;
+  color: #5a4a00 !important;
+}
+
+.section-head h2::after{
+  background: #ffe08a !important;
+}
+
+.back-to-top{
+  background: #ffe08a !important;
+}
