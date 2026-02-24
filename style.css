@@ -119,3 +119,46 @@ body{
 .back-to-top{
   background: #ffe08a !important;
 }
+
+
+
+
+/* =========================================
+   FORCE IMAGE TOP RIGHT (WORKING VERSION)
+   ========================================= */
+
+/* Make hero the positioning parent */
+.hero {
+  position: relative !important;
+}
+
+/* Remove image from flex layout */
+.profile-img {
+  position: absolute !important;
+  top: 30px !important;
+  right: 60px !important;
+
+  width: 100px !important;
+  height: 100px !important;
+
+  object-fit: cover !important;
+  border-radius: 50% !important;
+
+  margin: 0 !important;
+  z-index: 999 !important;
+}
+
+/* Prevent flex resizing it */
+.hero-inner img {
+  flex: none !important;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .profile-img{
+    width: 80px !important;
+    height: 80px !important;
+    top: 15px !important;
+    right: 20px !important;
+  }
+}
