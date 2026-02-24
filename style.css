@@ -462,11 +462,10 @@ img{ display:block; max-width:100%; }
 
 
 .project-name{
-  font-size: 1.7rem;   /* Bigger headline */
-  font-weight: 800;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  color: #0b4a7a;
 }
-
-
 
 
 
