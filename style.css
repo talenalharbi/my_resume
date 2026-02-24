@@ -467,46 +467,13 @@ img{ display:block; max-width:100%; }
   color: #0b4a7a;
 }
 
-/* =====================================
-   HERO IMAGE – TOP RIGHT (FINAL FIX)
-   ===================================== */
 
-/* Make hero container positioning reference */
-.hero {
-  position: relative;
-}
 
-/* Keep layout normal but allow absolute positioning */
-.hero-inner {
-  position: relative;
-}
 
-/* Move and resize image */
-.hero-photo {
-  position: absolute;
-  top: 25px;
-  right: 60px;
-}
+   
+} 
 
-.profile-img {
-  width: 110px;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-/* Mobile adjustment */
-@media (max-width: 768px){
-  .profile-img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .hero-photo {
-    top: 15px;
-    right: 20px;
-  }
-}
 
 
 
