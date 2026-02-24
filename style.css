@@ -169,15 +169,19 @@ img{ display:block; max-width:100%; }
 
 /* Profile image: guaranteed nice crop */
 .profile-img{
-  width: 245px;
-  height: 245px;
+  position: absolute;
+  top: 25px;
+  right: 40px;
+
+  width: 110px;
+  height: 110px;
+
   border-radius: 50%;
   object-fit: cover;
-  background: rgba(255,255,255,.65);
-  border: 7px solid rgba(255,255,255,.90);
-  box-shadow: 0 22px 55px rgba(0,0,0,.18);
-}
 
+  border: 4px solid rgba(255,255,255,.9);
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
 /* cute wave */
 .hero-wave{
   position:absolute;
