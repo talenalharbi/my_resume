@@ -478,14 +478,6 @@ img{ display:block; max-width:100%; }
 } 
 
 
-.profile-img{
-  animation: floatPic 4s ease-in-out infinite;
-}
-
-@keyframes floatPic{
-  0%,100%{ transform: translateY(0); }
-  50%{ transform: translateY(-6px); }
-}
 
 
 
