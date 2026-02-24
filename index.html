@@ -1,28 +1,269 @@
-/* Projects list (bars) */
-.project-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 14px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talen Alharbi — Resume</title>
 
-.project-row{
-  padding: 14px 16px;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.04);
-  box-shadow: 0 10px 24px rgba(0,0,0,.06);
-  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,217,102,.10));
-  border-left: 6px solid #87CEFA; /* bar */
-}
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-.project-name{
-  font-weight: 900;
-  margin-bottom: 4px;
-  color: #0b4a7a;
-}
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-.project-desc{
-  color: #6b7280;
-  margin: 0;
-}
+  <!-- Your CSS (this is what creates the “old design”) -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO / HEADER -->
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge hero-badge">Available for Internship • 2026</span>
+        <h1 class="hero-title">Talen Alharbi</h1>
+        <p class="hero-subtitle">Software Engineering Student • Web Development • UI/UX</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary hero-btn" href="#projects">
+            <i class="fa-solid fa-folder-open me-2"></i>View Projects
+          </a>
+          <a class="btn btn-outline-light hero-btn" href="#contact">
+            <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+          </a>
+        </div>
+
+        <div class="hero-links" aria-label="Social links">
+          <!-- Put your real links -->
+          <a href="https://www.linkedin.com/in/yourusername/" class="icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/yourusername" class="icon-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:talen.alharbi@uj.edu.sa" class="icon-link" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <!-- IMPORTANT: make sure this exists exactly -->
+        <img src="images/profile.jpg" alt="Talen Alharbi profile picture" class="profile-img" />
+      </div>
+    </div>
+
+    <div class="hero-wave" aria-hidden="true"></div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand" href="#top">TA</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="menu">
+        <ul class="navbar-nav gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex">
+        <a class="btn btn-sm btn-outline-light" href="#contact">Hire / Connect</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- ABOUT -->
+    <section id="about" class="section card glass">
+      <div class="container">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p class="section-note">A quick snapshot of who I am and what I love building.</p>
+        </div>
+
+        <p class="lead mb-0">
+          Dedicated Software Engineering student at University of Jeddah with strong interest in Web Development and UI/UX design.
+          Skilled in building responsive websites using HTML5, CSS3, and Bootstrap. Passionate about creating modern and user-friendly digital solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section card">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p class="section-note">Academic background</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Bachelor of Software Engineering</h3>
+              <p class="muted mb-0">University of Jeddah • 2022 — 2027</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (keep as before) -->
+    <section id="skills" class="section card">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="section-note">Tools I use</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h3><i class="fa-solid fa-code me-2"></i>Front-End</h3>
+              <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h3><i class="fa-solid fa-pen-nib me-2"></i>UI/UX</h3>
+              <div class="tags">
+                <span class="tag">Wireframing</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">Accessibility</span>
+                <span class="tag">Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="skill-card">
+              <h3><i class="fa-solid fa-bolt me-2"></i>Strengths</h3>
+              <div class="tags">
+                <span class="tag">Teamwork</span>
+                <span class="tag">Problem Solving</span>
+                <span class="tag">Communication</span>
+                <span class="tag">Detail</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS (ONLY changed into list with descriptions, same design) -->
+    <section id="projects" class="section card">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="section-note">Selected work</p>
+        </div>
+
+        <ul class="project-list">
+          <li class="project-row">
+            <div class="project-name">Gym Management Website</div>
+            <div class="project-desc">Responsive website to manage memberships, class schedules, and trainer profiles using HTML, CSS, and Bootstrap.</div>
+          </li>
+
+          <li class="project-row">
+            <div class="project-name">Task Management Web App</div>
+            <div class="project-desc">To-do web app to add, edit, and organize daily tasks with a clean and mobile-friendly layout.</div>
+          </li>
+
+          <li class="project-row">
+            <div class="project-name">Online Booking System UI</div>
+            <div class="project-desc">Front-end interface for booking appointments with service selection and calendar view screens.</div>
+          </li>
+
+          <li class="project-row">
+            <div class="project-name">Student Dashboard Interface</div>
+            <div class="project-desc">Dashboard layout showing announcements, schedules, and progress cards with responsive sections.</div>
+          </li>
+
+          <li class="project-row">
+            <div class="project-name">E-Commerce Front-End Page</div>
+            <div class="project-desc">Storefront UI with product listing, product details layout, and cart section design.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT (old contact: email + form) -->
+    <section id="contact" class="section card">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact Me</h2>
+          <p class="section-note">Send a message</p>
+        </div>
+
+        <p class="mb-3">Email: <a href="mailto:talen.alharbi@uj.edu.sa">talen.alharbi@uj.edu.sa</a></p>
+
+        <form id="contactForm" class="contact-form">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input class="form-control" type="text" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" type="email" placeholder="Your Email" required>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary px-4" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container d-flex justify-content-between flex-wrap gap-2">
+      <span>© 2026 Talen Alharbi</span>
+      <span class="muted">Built with Bootstrap</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact form works -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Message sent!");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
