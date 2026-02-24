@@ -183,9 +183,7 @@ img{ display:block; max-width:100%; }
   background-size: 124px 58px;
 }
 
-/* =========================================================
-   NAVBAR
-========================================================= */
+/*  NAVBAR */
 .custom-nav{
   background: rgba(255,255,255,.90) !important;
   backdrop-filter: blur(10px);
@@ -221,9 +219,8 @@ img{ display:block; max-width:100%; }
 }
 .nav-link:hover::after{ transform: scaleX(1); }
 
-/* =========================================================
-   SECTIONS / CARDS
-========================================================= */
+
+
 .page{ padding-bottom: 30px; }
 
 .section{
@@ -241,7 +238,7 @@ img{ display:block; max-width:100%; }
   overflow: hidden;
 }
 
-/* tiny cute dots in corners */
+
 .card::before{
   content:"";
   position:absolute;
@@ -358,9 +355,6 @@ img{ display:block; max-width:100%; }
   border: 1px solid rgba(255,224,138,.65);
 }
 
-/* =========================================================
-   Projects
-========================================================= */
 /* Projects list (bars) */
 .project-list{
   list-style: none;
@@ -389,9 +383,7 @@ img{ display:block; max-width:100%; }
   color: #6b7280;
   margin: 0;
 }
-/* =========================================================
-   Forms
-========================================================= */
+/* Forms */
 .contact-form .form-control{
   border-radius: 16px;
   border: 1px solid rgba(22,48,66,.14);
