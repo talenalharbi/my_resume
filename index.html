@@ -8,10 +8,10 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Icons (optional but recommended) -->
+  <!-- Icons (optional) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Your CSS -->
+  <!-- Your CSS file (make sure the name is correct) -->
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -21,39 +21,34 @@
 
 <body>
 
-  <!-- HERO / HEADER -->
+  <!-- HERO -->
   <header class="hero" id="top">
     <div class="container hero-inner">
       <div class="hero-text">
-        <span class="badge hero-badge">Available for Internship • 2026</span>
+        <span class="badge hero-badge">Software Engineering Student</span>
         <h1 class="hero-title">Talen Alharbi</h1>
-        <p class="hero-subtitle">Software Engineering Student • Web Development • UI/UX</p>
+        <p class="hero-subtitle">Web • UI/UX • Front-End</p>
 
         <div class="hero-actions">
           <a class="btn btn-primary hero-btn" href="#projects">
-            <i class="fa-solid fa-folder-open me-2"></i>View Projects
+            <i class="fa-solid fa-folder-open me-2"></i>Projects
           </a>
           <a class="btn btn-outline-light hero-btn" href="#contact">
-            <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+            <i class="fa-solid fa-paper-plane me-2"></i>Contact
           </a>
-        </div>
 
-        <div class="hero-links" aria-label="Social links">
-          <!-- Replace # with your real links -->
-          <a href="#" class="icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <i class="fa-brands fa-linkedin"></i>
+          <!-- WORKING BUTTONS (replace yourusername with yours) -->
+          <a class="btn btn-outline-light hero-btn" href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
           </a>
-          <a href="#" class="icon-link" aria-label="GitHub" target="_blank" rel="noopener">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="mailto:talen.alharbi@uj.edu.sa" class="icon-link" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
+          <a class="btn btn-outline-light hero-btn" href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github me-2"></i>GitHub
           </a>
         </div>
       </div>
 
       <div class="hero-photo">
-        <!-- Ensure this path matches your folder structure -->
+        <!-- Make sure this path is correct -->
         <img src="images/profile.jpg" alt="Talen Alharbi profile picture" class="profile-img" />
       </div>
     </div>
@@ -75,67 +70,41 @@
         <ul class="navbar-nav gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Studies</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </div>
-
-      <div class="d-none d-lg-flex">
-        <a class="btn btn-sm btn-outline-light" href="#contact">Hire / Connect</a>
       </div>
     </div>
   </nav>
 
   <main class="page">
 
-    <!-- ABOUT -->
+    <!-- ABOUT (simple) -->
     <section id="about" class="section card glass">
       <div class="container">
         <div class="section-head">
-          <h2>About Me</h2>
-          <p class="section-note">A quick snapshot of who I am and what I love building.</p>
+          <h2>About</h2>
+          <p class="section-note">I build clean, responsive UIs.</p>
         </div>
 
         <div class="row align-items-center g-4">
           <div class="col-md-5">
             <div class="about-card">
-              <div class="about-highlight">
-                <i class="fa-solid fa-sparkles me-2"></i>
-                <span>Focused on clean UI, fast performance, and delightful UX.</span>
-              </div>
-
-              <ul class="about-list">
+              <ul class="about-list m-0">
                 <li><i class="fa-solid fa-location-dot me-2"></i>Jeddah, Saudi Arabia</li>
                 <li><i class="fa-solid fa-building-columns me-2"></i>University of Jeddah</li>
-                <li><i class="fa-solid fa-code me-2"></i>HTML • CSS • Responsive Design</li>
+                <li><i class="fa-solid fa-code me-2"></i>HTML • CSS • Bootstrap</li>
               </ul>
             </div>
           </div>
 
           <div class="col-md-7">
-            <p class="lead">
-              Dedicated Software Engineering student at University of Jeddah with a passion for Web Development and UI/UX design.
-              I enjoy creating responsive, accessible websites with clean visuals and clear user flows.
+            <p class="lead mb-0">
+              Software Engineering student focused on web development and UI/UX.
             </p>
-
-            <div class="quick-stats">
-              <div class="stat">
-                <div class="stat-num">2+</div>
-                <div class="stat-label">Projects</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">2026</div>
-                <div class="stat-label">Graduation</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">UJ</div>
-                <div class="stat-label">Software Eng</div>
-              </div>
-            </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -144,18 +113,18 @@
       <div class="container">
         <div class="section-head">
           <h2>Education</h2>
-          <p class="section-note">Academic background & key coursework.</p>
+          <p class="section-note">Bachelor’s Degree</p>
         </div>
 
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Bachelor of Software Engineering</h3>
-              <p class="muted">University of Jeddah • 2022 — 2026</p>
-              <ul class="clean-list">
-                <li>Web Development Fundamentals</li>
-                <li>Cybersecurity Basics</li>
+              <h3 class="mb-1">BSc Software Engineering</h3>
+              <p class="muted mb-2">University of Jeddah • 2022 — 2026</p>
+              <ul class="clean-list mb-0">
+                <li>Software Engineering Fundamentals</li>
+                <li>Web Development</li>
                 <li>Software Project Management</li>
               </ul>
             </div>
@@ -165,47 +134,63 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section card">
+    <!-- STUDIES / COURSES (more, software-focused) -->
+    <section id="courses" class="section card">
       <div class="container">
         <div class="section-head">
-          <h2>Skills</h2>
-          <p class="section-note">Tools & strengths I use to build modern experiences.</p>
+          <h2>Studies</h2>
+          <p class="section-note">Key software courses</p>
         </div>
 
         <div class="row g-3">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="skill-card">
-              <h3><i class="fa-solid fa-code me-2"></i>Front-End</h3>
+              <h3 class="mb-2"><i class="fa-solid fa-laptop-code me-2"></i>Software Core</h3>
               <div class="tags">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Databases</span>
+                <span class="tag">Software Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h3 class="mb-2"><i class="fa-solid fa-diagram-project me-2"></i>Engineering & Design</h3>
+              <div class="tags">
+                <span class="tag">Requirements</span>
+                <span class="tag">UML</span>
+                <span class="tag">HCI / UI-UX</span>
+                <span class="tag">Software Architecture</span>
+                <span class="tag">Agile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h3 class="mb-2"><i class="fa-solid fa-globe me-2"></i>Web</h3>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
                 <span class="tag">Bootstrap</span>
-                <span class="tag">Responsive UI</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="skill-card">
-              <h3><i class="fa-solid fa-pen-nib me-2"></i>UI/UX</h3>
-              <div class="tags">
-                <span class="tag">Wireframing</span>
-                <span class="tag">Design Systems</span>
+                <span class="tag">Responsive Design</span>
                 <span class="tag">Accessibility</span>
-                <span class="tag">Prototyping</span>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="skill-card">
-              <h3><i class="fa-solid fa-bolt me-2"></i>Strengths</h3>
+              <h3 class="mb-2"><i class="fa-solid fa-shield-halved me-2"></i>Security & Systems</h3>
               <div class="tags">
-                <span class="tag">Teamwork</span>
-                <span class="tag">Problem Solving</span>
-                <span class="tag">Communication</span>
-                <span class="tag">Attention to Detail</span>
+                <span class="tag">Cybersecurity Basics</span>
+                <span class="tag">Networks</span>
+                <span class="tag">Operating Systems</span>
+                <span class="tag">Distributed Systems</span>
+                <span class="tag">Cloud Basics</span>
               </div>
             </div>
           </div>
@@ -214,18 +199,12 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (more projects, NO buttons) -->
     <section id="projects" class="section card">
       <div class="container">
-        <div class="section-head d-flex align-items-end justify-content-between flex-wrap gap-2">
-          <div>
-            <h2>Projects</h2>
-            <p class="section-note">Selected work — built with a focus on user experience.</p>
-          </div>
-
-          <div class="project-filter">
-            <span class="muted small">Add real links (Demo / GitHub) when ready.</span>
-          </div>
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="section-note">Selected work</p>
         </div>
 
         <div class="row g-4">
@@ -234,25 +213,12 @@
               <div class="project-top">
                 <div class="project-icon"><i class="fa-solid fa-dumbbell"></i></div>
                 <div>
-                  <h3>Gym Management Website</h3>
-                  <p class="muted">Responsive website for managing gym memberships and schedules.</p>
+                  <h3 class="mb-1">Gym Management Website</h3>
+                  <p class="muted mb-0">Memberships • schedules • responsive UI</p>
                 </div>
               </div>
-
               <div class="tags mt-2">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Responsive</span>
-              </div>
-
-              <div class="project-actions mt-3">
-                <!-- Replace with your real links -->
-                <a href="https://example.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
-                  Live Demo
-                </a>
-                <a href="https://github.com/yourusername/yourrepo" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
-                  GitHub
-                </a>
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
               </div>
             </article>
           </div>
@@ -262,25 +228,72 @@
               <div class="project-top">
                 <div class="project-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                 <div>
-                  <h3>Smart Mobile Application</h3>
-                  <p class="muted">Mobile app developed for Software Project Management course.</p>
+                  <h3 class="mb-1">Smart Mobile App</h3>
+                  <p class="muted mb-0">Course project • UI/UX prototype</p>
                 </div>
               </div>
-
               <div class="tags mt-2">
-                <span class="tag">Project Mgmt</span>
-                <span class="tag">UI/UX</span>
-                <span class="tag">Prototype</span>
+                <span class="tag">UI/UX</span><span class="tag">Prototype</span><span class="tag">Planning</span>
               </div>
+            </article>
+          </div>
 
-              <div class="project-actions mt-3">
-                <!-- Replace with your real links -->
-                <a href="https://example.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
-                  Case Study
-                </a>
-                <a href="https://example.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
-                  Screens
-                </a>
+          <div class="col-md-6">
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+                <div>
+                  <h3 class="mb-1">Task Tracker Web Page</h3>
+                  <p class="muted mb-0">To-do • priorities • clean layout</p>
+                </div>
+              </div>
+              <div class="tags mt-2">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                <div>
+                  <h3 class="mb-1">Event Booking UI</h3>
+                  <p class="muted mb-0">Cards • filters • simple UX</p>
+                </div>
+              </div>
+              <div class="tags mt-2">
+                <span class="tag">Bootstrap</span><span class="tag">UI</span><span class="tag">Cards</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <h3 class="mb-1">Analytics Dashboard (UI)</h3>
+                  <p class="muted mb-0">Layout • components • charts ready</p>
+                </div>
+              </div>
+              <div class="tags mt-2">
+                <span class="tag">UI</span><span class="tag">Layout</span><span class="tag">Components</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon"><i class="fa-solid fa-user-check"></i></div>
+                <div>
+                  <h3 class="mb-1">Login / Signup UI</h3>
+                  <p class="muted mb-0">Forms • validation-ready • clean</p>
+                </div>
+              </div>
+              <div class="tags mt-2">
+                <span class="tag">Forms</span><span class="tag">UX</span><span class="tag">Responsive</span>
               </div>
             </article>
           </div>
@@ -293,8 +306,8 @@
     <section id="contact" class="section card">
       <div class="container">
         <div class="section-head">
-          <h2>Contact Me</h2>
-          <p class="section-note">Let’s connect — I respond quickly.</p>
+          <h2>Contact</h2>
+          <p class="section-note">Email or message</p>
         </div>
 
         <div class="row g-4">
@@ -309,47 +322,45 @@
               </div>
 
               <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-brands fa-linkedin"></i>
                 <div>
-                  <div class="muted small">Location</div>
-                  <span>Jeddah, Saudi Arabia</span>
+                  <div class="muted small">LinkedIn</div>
+                  <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener">Open profile</a>
                 </div>
               </div>
 
               <div class="info-item">
-                <i class="fa-solid fa-link"></i>
+                <i class="fa-brands fa-github"></i>
                 <div>
-                  <div class="muted small">Links</div>
-                  <span class="muted">Add LinkedIn / GitHub links above</span>
+                  <div class="muted small">GitHub</div>
+                  <a href="https://github.com/yourusername" target="_blank" rel="noopener">Open profile</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <!-- Working form (frontend-only) -->
             <form id="contactForm" class="contact-form">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label" for="name">Your Name</label>
-                  <input id="name" class="form-control" type="text" placeholder="Your Name" required>
+                  <label class="form-label" for="name">Name</label>
+                  <input id="name" class="form-control" type="text" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label" for="email">Your Email</label>
-                  <input id="email" class="form-control" type="email" placeholder="Your Email" required>
+                  <label class="form-label" for="email">Email</label>
+                  <input id="email" class="form-control" type="email" required>
                 </div>
 
                 <div class="col-12">
                   <label class="form-label" for="message">Message</label>
-                  <textarea id="message" class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+                  <textarea id="message" class="form-control" rows="5" required></textarea>
                 </div>
 
-                <div class="col-12 d-flex gap-2 align-items-center">
+                <div class="col-12">
                   <button class="btn btn-primary px-4" type="submit">
-                    <i class="fa-solid fa-paper-plane me-2"></i>Send
+                    Send
                   </button>
-                  <small class="muted">This form works (frontend demo).</small>
                 </div>
               </div>
             </form>
@@ -359,7 +370,6 @@
       </div>
     </section>
 
-    <!-- Back to top -->
     <a class="back-to-top" href="#top" aria-label="Back to top">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
@@ -369,7 +379,7 @@
   <footer class="footer">
     <div class="container d-flex justify-content-between flex-wrap gap-2">
       <span>© 2026 Talen Alharbi</span>
-      <span class="muted">Built with ❤️ + Bootstrap</span>
+      <span class="muted">Light Blue • Yellow Theme</span>
     </div>
   </footer>
 
@@ -381,7 +391,7 @@
     document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
       const name = document.getElementById("name").value.trim();
-      alert("Thank you " + (name || "there") + "! Your message has been sent.");
+      alert("Thanks " + (name || "there") + "! Message sent.");
       this.reset();
     });
   </script>
