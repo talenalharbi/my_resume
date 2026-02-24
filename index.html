@@ -15,63 +15,22 @@ body{
   text-align:center;
   padding:40px 20px;
 }
-
 h1{ font-weight:700; }
+section{ margin-top:40px; max-width:800px; margin-left:auto; margin-right:auto; }
+ul{ list-style:none; padding:0; text-align:left; }
+li{ margin-bottom:20px; }
+a{ text-decoration:none; color:#0077cc; font-weight:600; }
+a:hover{ color:#FFD966; }
 
-section{
-  margin-top:40px;
-  max-width:800px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-ul{
-  list-style:none;
-  padding:0;
-  text-align:left;
-}
-
-li{
-  margin-bottom:20px;
+/* ✅ ADDED: project bar style ONLY (does not change your li rule) */
+.project-bar{
   padding-left:15px;
-  border-left:5px solid #0077cc; /* simple blue bar */
-}
-
-a{
-  text-decoration:none;
-  color:#0077cc;
-  font-weight:600;
-}
-
-a:hover{
-  color:#FFD966;
-}
-
-/* Contact form style (same simple look) */
-form{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin-top:15px;
-}
-
-input, textarea{
-  padding:10px;
+  border-left:5px solid #0077cc;
+  background:#fff;
   border-radius:6px;
-  border:1px solid #ccc;
-}
-
-button{
-  background-color:#0077cc;
-  color:white;
-  border:none;
-  padding:10px;
-  border-radius:6px;
-}
-
-button:hover{
-  background-color:#FFD966;
-  color:#333;
+  padding-top:10px;
+  padding-bottom:10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 </style>
 </head>
@@ -84,6 +43,7 @@ button:hover{
 
 <!-- Links -->
 <section>
+  <!-- Replace with your real links -->
   <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a> |
   <a href="https://github.com/yourusername" target="_blank">GitHub</a>
 </section>
@@ -110,42 +70,45 @@ button:hover{
 <section>
   <h2>Projects</h2>
   <ul>
-    <li>
+    <li class="project-bar">
       <strong>Gym Management Website</strong><br>
       Responsive website for managing memberships, class schedules, and trainer information using HTML, CSS, and Bootstrap.
     </li>
 
-    <li>
+    <li class="project-bar">
       <strong>Task Management Web App</strong><br>
       Simple to-do web application that allows users to add, edit, and organize daily tasks with a clean user interface.
     </li>
 
-    <li>
+    <li class="project-bar">
       <strong>Online Booking System UI</strong><br>
       User interface design for an appointment booking system including calendar view and service selection pages.
     </li>
 
-    <li>
+    <li class="project-bar">
       <strong>Student Dashboard Interface</strong><br>
       Dashboard layout displaying academic progress, announcements, and schedules with responsive design principles.
     </li>
 
-    <li>
+    <li class="project-bar">
       <strong>E-Commerce Front-End Page</strong><br>
       Front-end design for an online store including product listing, product details, and shopping cart layout.
     </li>
   </ul>
 </section>
 
-<!-- Contact (old simple version restored) -->
+<!-- ✅ Contact (old contact added) -->
 <section>
   <h2>Contact</h2>
   <p>Email: talen.alharbi@uj.edu.sa</p>
 
   <form id="contactForm">
     <input type="text" placeholder="Your Name" required>
+    <br><br>
     <input type="email" placeholder="Your Email" required>
+    <br><br>
     <textarea rows="4" placeholder="Message" required></textarea>
+    <br><br>
     <button type="submit">Send</button>
   </form>
 </section>
