@@ -3,105 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Talen Alharbi</title>
+<title>Talen Alharbi — Resume</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-body{
-  font-family: 'Segoe UI', sans-serif;
-  background-color:#f4fbff;
-  color:#222;
-  text-align:center;
-  padding:40px 20px;
-}
-
-h1{ font-weight:700; }
-section{ margin-top:40px; max-width:800px; margin-left:auto; margin-right:auto; }
-
-ul{
-  list-style:none;
-  padding:0;
-  text-align:left;
-}
-
-li{
-  margin-bottom:20px;
-}
-
-a{
-  text-decoration:none;
-  color:#0077cc;
-  font-weight:600;
-}
-
-a:hover{
-  color:#FFD966;
-}
+html { scroll-behavior: smooth; }
 </style>
 </head>
 
 <body>
 
-<!-- Header -->
-<h1>Talen Alharbi</h1>
-<p>Software Engineering Student</p>
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="badge hero-badge">Software Engineering Student</span>
+      <h1 class="hero-title">Talen Alharbi</h1>
+      <p class="hero-subtitle">Web • UI/UX • Front-End</p>
 
-<!-- Links -->
-<section>
-  <!-- Replace with your real links -->
-  <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a> |
-  <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <div class="hero-actions">
+        <a class="btn btn-primary hero-btn" href="#projects">Projects</a>
+        <a class="btn btn-outline-light hero-btn" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="images/profile.jpg" alt="Profile" class="profile-img">
+    </div>
+  </div>
+  <div class="hero-wave"></div>
+</header>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg custom-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#top">TA</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menu">
+      <ul class="navbar-nav gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+<!-- ABOUT -->
+<section id="about" class="section card glass">
+  <div class="container">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+
+    <p>
+      Dedicated Software Engineering student at University of Jeddah with strong interest in Web Development and UI/UX design.
+      Skilled in building responsive websites using HTML5, CSS3, and Bootstrap.
+    </p>
+  </div>
 </section>
 
-<!-- About -->
-<section>
-  <h2>About</h2>
-  <p>
-    Dedicated Software Engineering student at University of Jeddah with strong interest in Web Development and UI/UX design.
-    Skilled in building responsive websites using HTML5, CSS3, and Bootstrap.
-  </p>
+<!-- EDUCATION -->
+<section id="education" class="section card">
+  <div class="container">
+    <div class="section-head">
+      <h2>Education</h2>
+    </div>
+
+    <p>
+      Bachelor of Software Engineering<br>
+      University of Jeddah (2022 – 2027)
+    </p>
+  </div>
 </section>
 
-<!-- Education -->
-<section>
-  <h2>Education</h2>
-  <p>
-    Bachelor of Software Engineering<br>
-    University of Jeddah (2022 – 2027)
-  </p>
+<!-- PROJECTS (UPDATED LIST STYLE) -->
+<section id="projects" class="section card">
+  <div class="container">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="section-note">Selected Work</p>
+    </div>
+
+    <ul style="list-style:none; padding:0; max-width:800px; margin:auto; text-align:left;">
+
+      <li style="margin-bottom:25px;">
+        <h4>Gym Management Website</h4>
+        <p class="muted">
+          Responsive website for managing memberships, schedules, and trainer information using HTML, CSS, and Bootstrap.
+        </p>
+      </li>
+
+      <li style="margin-bottom:25px;">
+        <h4>Task Management Web Application</h4>
+        <p class="muted">
+          Simple to-do application allowing users to add, edit, and organize tasks with a clean and responsive interface.
+        </p>
+      </li>
+
+      <li style="margin-bottom:25px;">
+        <h4>Online Booking System Interface</h4>
+        <p class="muted">
+          Front-end design for an appointment booking system including service selection and calendar view pages.
+        </p>
+      </li>
+
+      <li style="margin-bottom:25px;">
+        <h4>Student Dashboard UI</h4>
+        <p class="muted">
+          Dashboard layout displaying academic progress, schedules, and announcements with responsive design principles.
+        </p>
+      </li>
+
+      <li style="margin-bottom:25px;">
+        <h4>E-Commerce Front-End Page</h4>
+        <p class="muted">
+          Front-end design of an online store including product listings, product details page, and shopping cart layout.
+        </p>
+      </li>
+
+    </ul>
+  </div>
 </section>
 
-<!-- Projects -->
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Gym Management Website</strong><br>
-      Responsive website for managing memberships, class schedules, and trainer information using HTML, CSS, and Bootstrap.
-    </li>
+<!-- CONTACT -->
+<section id="contact" class="section card">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
 
-    <li>
-      <strong>Task Management Web App</strong><br>
-      Simple to-do web application that allows users to add, edit, and organize daily tasks with a clean user interface.
-    </li>
-
-    <li>
-      <strong>Online Booking System UI</strong><br>
-      User interface design for an appointment booking system including calendar view and service selection pages.
-    </li>
-
-    <li>
-      <strong>Student Dashboard Interface</strong><br>
-      Dashboard layout displaying academic progress, announcements, and schedules with responsive design principles.
-    </li>
-
-    <li>
-      <strong>E-Commerce Front-End Page</strong><br>
-      Front-end design for an online store including product listing, product details, and shopping cart layout.
-    </li>
-  </ul>
+    <p>Email: talen.alharbi@uj.edu.sa</p>
+  </div>
 </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © 2026 Talen Alharbi
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
