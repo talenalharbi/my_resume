@@ -366,36 +366,34 @@ img{ display:block; max-width:100%; }
 /* =========================================================
    Projects
 ========================================================= */
-.project-card{
-  height: 100%;
-  border-radius: var(--radius);
-  border: 1px solid rgba(22,48,66,.06);
-  padding: 20px;
-  box-shadow: 0 12px 26px rgba(0,0,0,.06);
-  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,224,138,.12));
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.project-card:hover{
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+/* Projects list (bars) */
+.project-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
 }
 
-.project-top{
-  display:flex;
-  gap: 12px;
-  align-items:flex-start;
-}
-
-.project-icon{
-  width: 48px; height: 48px;
-  display:grid;
-  place-items:center;
+.project-row{
+  padding: 14px 16px;
   border-radius: 16px;
-  background: rgba(79,182,255,.20);
-  border: 1px solid rgba(79,182,255,.38);
-  color: #045c97;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,217,102,.10));
+  border-left: 6px solid #87CEFA; /* bar */
 }
 
+.project-name{
+  font-weight: 900;
+  margin-bottom: 4px;
+  color: #0b4a7a;
+}
+
+.project-desc{
+  color: #6b7280;
+  margin: 0;
+}
 /* =========================================================
    Forms
 ========================================================= */
