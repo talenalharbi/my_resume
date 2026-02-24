@@ -26,7 +26,6 @@ body{
   color: var(--ink);
   line-height: 1.65;
 
-  /* cute background */
   background:
     radial-gradient(900px 540px at 12% -10%, rgba(79,182,255,.28), transparent 60%),
     radial-gradient(820px 520px at 95% 0%, rgba(255,224,138,.40), transparent 55%),
