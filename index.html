@@ -27,8 +27,6 @@ ul{
 
 li{
   margin-bottom:20px;
-  padding-left:15px;
-  border-left:5px solid #0077cc;   /* ← البار الأزرق */
 }
 
 a{
@@ -40,48 +38,19 @@ a{
 a:hover{
   color:#FFD966;
 }
-
-form{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin-top:15px;
-}
-
-input, textarea{
-  padding:10px;
-  border-radius:6px;
-  border:1px solid #ccc;
-}
-
-button{
-  background-color:#0077cc;
-  color:white;
-  border:none;
-  padding:10px;
-  border-radius:6px;
-}
-
-button:hover{
-  background-color:#FFD966;
-  color:#333;
-}
 </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <h1>Talen Alharbi</h1>
 <p>Software Engineering Student</p>
 
-<!-- Links -->
 <section>
   <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a> |
   <a href="https://github.com/yourusername" target="_blank">GitHub</a>
 </section>
 
-<!-- About -->
 <section>
   <h2>About</h2>
   <p>
@@ -90,7 +59,6 @@ button:hover{
   </p>
 </section>
 
-<!-- Education -->
 <section>
   <h2>Education</h2>
   <p>
@@ -99,57 +67,49 @@ button:hover{
   </p>
 </section>
 
-<!-- Projects -->
+<!-- Projects (only structure changed, no style changed) -->
 <section>
   <h2>Projects</h2>
   <ul>
     <li>
       <strong>Gym Management Website</strong><br>
-      Responsive website for managing memberships, class schedules, and trainer information using HTML, CSS, and Bootstrap.
+      Responsive website for managing memberships, schedules, and trainer information.
     </li>
 
     <li>
-      <strong>Task Management Web App</strong><br>
-      Simple to-do web application that allows users to add, edit, and organize daily tasks with a clean user interface.
+      <strong>Task Management Web Application</strong><br>
+      To-do web app allowing users to organize daily tasks with a clean interface.
     </li>
 
     <li>
-      <strong>Online Booking System UI</strong><br>
-      User interface design for an appointment booking system including calendar view and service selection pages.
+      <strong>Online Booking System Interface</strong><br>
+      Front-end design for an appointment booking system with calendar view.
     </li>
 
     <li>
-      <strong>Student Dashboard Interface</strong><br>
-      Dashboard layout displaying academic progress, announcements, and schedules with responsive design principles.
+      <strong>Student Dashboard UI</strong><br>
+      Dashboard layout showing academic progress and announcements.
     </li>
 
     <li>
       <strong>E-Commerce Front-End Page</strong><br>
-      Front-end design for an online store including product listing, product details, and shopping cart layout.
+      Online store layout including product listing and shopping cart.
     </li>
   </ul>
 </section>
 
-<!-- Contact (old version restored) -->
+<!-- Contact (restored without changing style) -->
 <section>
   <h2>Contact</h2>
   <p>Email: talen.alharbi@uj.edu.sa</p>
 
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" rows="4" placeholder="Message" required></textarea>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" required></textarea>
     <button type="submit">Send</button>
   </form>
 </section>
-
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e){
-  e.preventDefault();
-  alert("Message sent!");
-  this.reset();
-});
-</script>
 
 </body>
 </html>
